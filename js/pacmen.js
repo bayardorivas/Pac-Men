@@ -24,34 +24,24 @@ function makePac() {
   let game = document.getElementById("game");
   let newimg = document.createElement("img");
   newimg.style.position = "absolute";
-  newimg.src = "./images/PacMan1.png";
+  let imgPM = Math.floor((Math.random() * 4) + 1);
+  newimg.src = `./images/PacMan${imgPM}.png`;
   newimg.width = 100;
 
   // TODO: set position here
   newimg.style.left = position.x;
   newimg.style.top = position.y;
+
   // TODO add new Child image to game
   //game.appendChild(/* TODO: add parameter */);
   game.appendChild(newimg);
+
   // return details in an object
   return {
     position,
     velocity,
     newimg,
   };
-}
-
-function update() {
-  // loop over pacmen array and move each one and move image in DOM
-  pacMen.forEach((item) => {
-    checkCollisions(item);
-    item.position.x += item.velocity.x;
-    item.position.y += item.velocity.y;
-
-    item.newimg.style.left = item.position.x;
-    item.newimg.style.top = item.position.y;
-  });
-  setTimeout(update, 20);
 }
 
 function checkCollisions(item) {
@@ -69,6 +59,19 @@ function checkCollisions(item) {
   ) {
     item.velocity.y = -item.velocity.y;
   }
+}
+
+function update() {
+  // loop over pacmen array and move each one and move image in DOM
+  pacMen.forEach((item) => {
+    checkCollisions(item);
+    item.position.x += item.velocity.x;
+    item.position.y += item.velocity.y;
+
+    item.newimg.style.left = item.position.x;
+    item.newimg.style.top = item.position.y;
+  });
+  setTimeout(update, 20);
 }
 
 function makeOne() {
