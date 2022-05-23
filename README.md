@@ -2,7 +2,7 @@
 Multiples PacMan moving randomly
 
 <div align="center" id="top"> 
-  <img src="./imgages/splash.png" alt="PacMen" />
+  <img src="./images/splash.png" alt="PacMen" />
 
   &#xa0;
 
