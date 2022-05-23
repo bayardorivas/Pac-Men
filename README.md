@@ -89,10 +89,10 @@ $ cd Pac-Men
 ## :recycle: Improvements ##
 
 It would be nice the next improvements:
-[ ]. Include different characters additional to PacMan.
-[ ]. Eliminate one image when 2 collide.
-[ ]. Add sound for different events.
-[ ]. Add barriers inside of the field to have more bouncing.
+- [ ]. Include different characters additional to PacMan
+- [ ] Eliminate one image when 2 collide.
+- [ ] Add sound for different events.
+- [ ] Add barriers inside of the field to have more bouncing.
 
 ## :memo: License ##
 
