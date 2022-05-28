@@ -1,5 +1,22 @@
 body{
-    background-color: black;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#game{
+  
+  height: 50vh;
+  /* min-width: 50vw; */
+  
+  position: relative;
+  /**/
+  border: 5px solid blue;
+  border-radius: 10px; 
+  background: black url(../images/pacmanbg.webp) no-repeat center;
 }
 
 /* 
